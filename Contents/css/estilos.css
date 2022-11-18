@@ -1,0 +1,16 @@
+/* Modify the background color */
+.navbar-custom {
+    background-color: #0E9DD9 !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;;
+}
+
+div {
+    text-align: center !important;
+}
+
+.mb {
+    margin-bottom: 1.5rem !important;
+}

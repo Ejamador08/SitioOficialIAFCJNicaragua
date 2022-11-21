@@ -1,6 +1,11 @@
 /* Modify the background color */
-.navbar-custom {
+body{
+    background: linear-gradient(90deg, rgba(187,31,147,1) 0%, rgba(50,39,110,1) 44%, rgba(0,255,235,1) 100%);
+}
+
+.navbar-custom, .alert-custom, .footer-custom, .espirit-custom {
     background-color: #0E9DD9 !important;
+    color: #fff !important;
 }
 
 .navbar-custom .navbar-brand {
@@ -13,4 +18,21 @@ div {
 
 .mb {
     margin-bottom: 1.5rem !important;
+}
+
+.icon-custom{
+    color: #89181a !important;
+}
+
+.ir-arriba {
+	padding:20px;
+	display:inline-block;
+	background:#0E9DD9;
+	color:#fff;
+	position: fixed;
+	font-size:20px;
+	bottom:20px;
+	right:20px;
+	display:none;
+	cursor:pointer;
 }

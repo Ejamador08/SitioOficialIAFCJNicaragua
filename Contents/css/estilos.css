@@ -1,15 +1,15 @@
 /* Modify the background color */
 body{
-    background: linear-gradient(90deg, rgba(187,31,147,1) 0%, rgba(50,39,110,1) 44%, rgba(0,255,235,1) 100%);
+    background-color: #0658A2 !important;
 }
 
-.navbar-custom, .alert-custom, .footer-custom, .espirit-custom {
+.navbar-custom, .alert-custom {
     background-color: #0E9DD9 !important;
     color: #fff !important;
 }
 
-.navbar-custom .navbar-brand {
-    color: #fff;;
+.navbar-custom .navbar-brand, .footer-custom {
+    color: #fff !important;
 }
 
 div {
@@ -21,9 +21,18 @@ div {
 }
 
 .icon-custom{
-    color: #89181a !important;
+    color: #ffffff !important;
 }
 
+a{
+	text-decoration: none !important;
+}
+
+/*
+Boton para ir hacia arriba en el sitio
+-
+Inicio
+*/
 .ir-arriba {
 	padding:20px;
 	display:inline-block;
@@ -32,7 +41,13 @@ div {
 	position: fixed;
 	font-size:20px;
 	bottom:20px;
-	right:20px;
+	right:40px;
 	display:none;
 	cursor:pointer;
 }
+
+/*
+Boton para ir hacia arriba en el sitio
+-
+Fin
+*/

@@ -1,0 +1,78 @@
+/*
+Redes sociales - Lateral
+- 
+Inicio 
+*/
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .fa-facebook-f {background:#1977F3;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .fa-twitter {background: #1D9BF0;}
+	.social ul li .fa-google {background: #34A853;}
+	.social ul li .fa-instagram {background: #CF2F7A;}
+	.social ul li .fa-envelope {background: #F2B500;}
+
+	.social ul li a:hover {
+		background: #fff; /* Cambiamos el fondo cuando el usuario pase el mouse */
+        color: #000;
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+/*
+Redes sociales - Lateral
+- 
+Fin 
+*/
+
+/*
+Whatsapp flotante 
+- 
+Inicio 
+*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #0E9DD9;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/*
+Whatsapp flotante 
+- 
+Fin
+*/

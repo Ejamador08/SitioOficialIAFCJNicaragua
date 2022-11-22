@@ -16,16 +16,64 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    <link rel="stylesheet" href="/Contents/css/Social.css" />
+    <link rel="stylesheet" href="/Contents/css/whatsapp-chat-support.css" />
+    <script
+      src="https://kit.fontawesome.com/63144e4478.js"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/Contents/css/fonts.css" />
+    ></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body onload="mostrarSaludo()">
+    <!-- Espacio para redes Sociales - Inicio -->
+    <!-- <div class="social">
+      <ul>
+        <li>
+          <a
+            href="http://www.facebook.com/falconmasters"
+            target="_blank"
+            class="fab fa-facebook-f"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.twitter.com/falconmasters"
+            target="_blank"
+            class="fab fa-twitter"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.googleplus.com/falconmasters"
+            target="_blank"
+            class="fab fa-google"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://www.pinterest.com/falconmasters"
+            target="_blank"
+            class="fab fa-instagram"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="mailto:contacto@falconmasters.com"
+            class="fas fa-envelope"
+          ></a>
+        </li>
+      </ul>
+    </div> -->
+    <!-- Espacio para redes Sociales - Fin -->
+    <!-- Comunicación via chat - Inicio -->
+    <!-- <a
+      href="https://api.whatsapp.com/send?phone=50581211633&text=Bienvenido, en que podemos ayudarte"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a> -->
+    <!-- Comunicación via chat - Fin -->
     <!-- Botón subir arriba - Inicio -->
     <span class="ir-arriba">^</span>
     <script type="text/javascript">
@@ -695,5 +743,52 @@
       </script>
     </div>
     <!-- Contenedor Principal - Fin -->
+    <!-- jQuery 1.8+ -->
+    <script src="/Contents/js/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+    <script src="/Contents/js/moment.min.js"></script>
+    <script src="/Contents/js/moment-timezone-with-data.min.js"></script>
+    <!-- spanish language (es) -->
+    <script src="/Contents/js/whatsapp-chat-support.js"></script>
+    <!-- Botón de Whatsapp habilitado para chat - Inicio -->
+    <!-- Button Whatsapp Structure -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+      <div class="wcs_button_label">Contáctanos</div>
+      <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+      </div>
+
+      <div class="wcs_popup">
+        <div class="wcs_popup_close">
+          <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+          <span class="fa fa-whatsapp"></span>
+          <strong>IAFCJ Bot</strong>
+
+          <div class="wcs_popup_header_description">
+            Paz de Cristo!!! <br> ¿En qué podemos ayudarte?
+          </div>
+        </div>
+        <div
+          class="wcs_popup_input"
+          data-number="50581211633"
+          data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'
+        >
+          <input type="text" placeholder="En que te podemos ayudar?" />
+          <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+          <img src="/Contents/img/Navbar.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#button-w").whatsappChatSupport({
+        defaultMsg: "",
+      });
+    </script>
+
+    <!-- Botón de Whatsapp habilitado para chat - Inicio -->
   </body>
 </html>

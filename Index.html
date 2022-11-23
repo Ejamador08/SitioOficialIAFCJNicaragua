@@ -25,6 +25,23 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body onload="mostrarSaludo()">
+    <!-- Muestra Carga de Página - Inicio -->
+    <script type="text/javascript">
+      $(window).load(function(){
+        $("#cargasitio").delay(2000).fadeOut("slow");
+      })
+    </script>
+    <span id="cargasitio"> 
+      <p>
+        IAFCJ - Cargando...            
+        <div class="muestra">
+          <div class="spinner-border float-end" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+      </p>      
+    </span>
+    <!-- Muestra Carga de Página - Fin -->
     <!-- Espacio para redes Sociales - Inicio -->
     <!-- <div class="social">
       <ul>

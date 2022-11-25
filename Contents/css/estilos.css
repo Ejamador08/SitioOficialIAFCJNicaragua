@@ -134,7 +134,6 @@ Fin
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 }
 .contenedor figure{
    position:relative;
@@ -190,4 +189,18 @@ Fin
 }
 /*
 ------
+*/
+/*
+---
+Literatura - Inicio
+---
+*/
+.resena-custom{
+	color: #ffffff !important;
+	text-align: left !important;
+}
+/*
+---
+Literatura - Fin
+---
 */
